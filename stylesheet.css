@@ -1,0 +1,374 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: #000;
+	color: #fff;
+}
+body {
+	background: url(/h2_story.png) center top no-repeat;
+	font-size: 62.5%; /* 1px = 0.1em */
+	font-family: Verdana, sans-serif;
+}
+a {
+	color: #8dcced;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+img, div {
+	behavior: url(/wp-content/themes/deathnote/scripts/iepngfix.htc);
+	font-size: 100%;
+}
+.center {
+	text-align: center;
+}
+.left {
+	float: left;
+	margin: 0 2em 1em 0;
+}
+.right {
+	float: right;
+	margin: 0 0 1em 2em;
+}
+.clear {
+	clear: both;
+}
+
+/* PAGE STRUCTURE */
+#container {
+	width: 99.6em;
+	margin: 0 auto;
+	text-align: left;
+}
+#header {
+	background: url(images/bg_header.jpg) center top repeat-x;
+	width: 98em;
+	height: 16em;
+}
+#header h1 {
+	display: none;
+}
+#header h2 {
+	font-size: 2em;
+	margin: 2.1em 0 0 1.5em;
+}
+#header h2 img { /* ie fix */
+	width: 20em;
+	height: 1.5em;
+}
+.mainwrap {
+	background: #2c4357;
+	border: #c3c9ca 0.2em solid;
+	width: 96.5em;
+	padding: 0.6em;
+	float: left;
+}
+.mainwrap.colleft {
+	width: 65.1em;
+}
+.mainwrap.colright {
+	margin-left: 1.6em;
+	width: 281px;
+}
+.main {
+	background: #c3c9ca url(images/bg_main.jpg);
+	background-attachment: fixed;
+	border: #2c4357 0.3em double;
+	color: #2c4357;
+}
+.main img {
+	z-index: 2;
+}
+.main .copy {
+	margin: 5em;
+	padding: 0;
+}
+.main .copy h3 {
+	font: 2.4em Georgia, "Times New Roman", Times, serif;
+	color: #000;
+	padding-top: 0.5em;
+	margin: 0 0 0.1em 0;
+}
+.main .copy h3.highlight {
+	font-size: 4.8em;
+	font-style: italic;
+	margin-top: -0.5em;
+	padding: 0 0 0.4em 0;
+	border-bottom: 0.01em solid #2c4357;
+}
+.main .copy h4 {
+	font: 2em Georgia, "Times New Roman", Times, serif;
+	color: #000;
+	padding-top: 0.5em;
+	margin: 0 0 0.1em 0;
+}
+.main .copy p,
+.main .copy ul,
+.main .copy ol {
+	font-size: 1.1em;
+	line-height: 1.6em;
+	padding: 0.5em 0.1em 0.4em 0.1em;
+}
+.main .copy a {
+	color: #000;
+	/* text-decoration: underline; */
+}
+.main .copy a:hover {
+	/* text-decoration: none; */
+}
+.main .copy ul li {
+	list-style: square outside;
+	margin: 0.3em 0;
+}
+.main .copy ol li {
+	list-style: decimal inside;
+	margin: 0.3em 0;
+}
+.sealed {
+	border-top: 0.1em solid #44657d;
+	border-bottom: 0.1em solid #44657d;
+}
+.main .profile {
+	margin-left: 41em;
+	padding: 0 0 1.8em 0;
+}
+ul#menu {
+	background: #2c4357;
+	margin: 0 auto;
+	text-align: center;
+	padding: 1.4em 0;
+}
+ul#menu li {
+	font: bold 1.2em Georgia, "Times New Roman", Times, serif;
+	text-transform: uppercase;
+	display: inline;
+}
+ul#menu li a {
+	color: #c3c9ca;
+	/* padding: 0.667em; */
+	padding: 1em;
+}
+ul#menu li a:hover {
+	color: #fff;
+}
+
+/* BUTTONS */
+.main .copy .buttontext {
+	font: bold 10px/20px Verdana, sans-serif;
+	background: #44657d url(images/bt_plain2.gif) left top no-repeat;
+	color: #ffffff;
+	text-align: center;
+	display: block;
+	width: 100px;
+	height: 21px;
+	text-decoration: none;
+	margin: 0.4em 0;
+}
+.main .copy a:hover.buttontext {
+	background-position: 0 -21px;
+}
+.button {
+	width: 100px;
+	height: 21px;
+	display: block;
+	float: left;
+	margin: 1.1em 1em 0.2em 0;
+}
+a:hover.button {
+	background-position: 0 -21px;
+}
+.button span {
+	display: none;
+}
+
+/* HOME PAGE */
+#header.home {
+	background: #000;
+	width: 99.6em;
+	height: 18em;
+	top: 0;
+}
+img.logo {
+	width: 28.5em;
+	height: 6.6em;
+	top: 6em;
+	position: absolute;
+	padding-left: 3.8em;
+}
+#header.home .character {
+	width: 67.3em;
+	height: 18em;
+}
+#header.home .character img {
+	margin: 0 0 0 32.3em;
+	width: 67.3em;
+	height: 18em;
+}
+#header.home dl {
+	font: italic 1.2em/1.8 Georgia, "Times New Roman", Times, serif;
+	margin: 5em 3.167em 0 55.167em; /* 6em 3.8em 0 66.2em Ã· 1.2 font-size */
+	width: 24.67em; /* 29.6 Ã· 1.2 */
+	top: 0;
+	position: absolute;
+	z-index: 1;
+}
+#header.home dl dt {
+	display: none;
+}
+#header.home dl dd {
+	margin-bottom: 0.5em;
+}
+#header.home dl a {
+	text-align: right;
+	display: block;
+}
+#bg.home {
+	z-index: 0;
+}
+#bg img {
+	width: 99.6em;
+	height: 58em;
+}
+.main.home {
+	background: none;
+	border: none;
+	width: 99.6em;
+	position: absolute;
+	top: 18em;
+	z-index: 1;
+}
+.main.home ul#menu {
+	background: none;
+	padding: 2.8em 0;
+}
+.main.home ul#menu li a {
+	color: #eee;
+}
+.main.home ul#menu li a:hover {
+	color: #fff;
+}
+
+/* HOME PAGE: SELECT/TABS */
+@media projection, screen {
+    .ui-tabs-hide {display: none;}
+}
+@media print {
+    .ui-tabs-nav {display: none;}
+}
+.ui-tabs-nav {
+	display: inline-block;
+}
+.ui-tabs-nav:after { /* ie fix */
+    display: block;
+    clear: both;
+    content: " ";
+}
+.ui-tabs-nav li {
+    float: left;
+    margin: 0;
+}
+.ui-tabs-nav a {
+	background: #44657d;
+	height: 3.2em;
+	margin-right: 0.1em;
+	display: block;
+}
+.ui-tabs-nav a:hover {
+	background: #527992;
+}
+.ui-tabs-nav a span {
+    display: none;
+}
+.ui-tabs-nav .ui-tabs-selected a {
+	background: #6594af;
+    z-index: 2;
+}
+.ui-tabs-panel {
+    background: transparent;
+}
+ul.tabselect {
+	clear: both;
+}
+ul.tabselect img {
+	width: 20.3em;
+	height: 3.2em;
+}
+.single li {
+	background: #6594af;
+	width: 61.2em;
+}
+.halves a {
+	width: 30.5em;
+}
+.thirds a {
+	width: 20.3em;
+}
+.mainblock {
+	width: 62em;
+	margin: 0 0 1.8em 3.8em;
+	_margin: 0 0 1.8em 1.8em; /* ie fix */
+	float: left;
+}
+.featureblock {
+	background: #25394a;
+	float: left;
+}
+.featureblock p {
+	font: italic 1.6em Georgia, "Times New Roman", Times, serif;
+	color: #fff;
+	text-align: center;
+}
+#downloads.featureblock p {
+	margin-top: -1.9em;
+}
+.featureblock p a {
+}
+.featureblock p a:hover {
+	text-decoration: none;
+}
+.featureblock img {
+	width: 61.2em;
+	height: 18.8em;
+	display: block;
+}
+.sideblock {
+	background: #25394a;
+	width: 30em;
+	height: 22em;
+	float: left;
+}
+.sideblock .subheading {
+	background: #6594af;
+}
+.sideblock .subheading img { /* ie fix */
+	height: 3.2em;
+	width: 100%;
+}
+
+/* CHARACTER PAGE */
+img.character {
+	width: 180px;
+	height: 260px;
+	display: block;
+}
+img.icon {
+	width: 180px;
+	height: 210px;
+	margin-top: -30px;
+	display: block;
+}
+.main .copy h3.character {
+	margin-top: 1em;
+}
+
+
+/* RULES */
+.main .copy ul.rules {
+	/* font: italic 1.4em Georgia, "Times New Roman", Times, serif; */
+}
+.main .copy ul.rules li {
+	margin-bottom: 1.2em;
+}
